@@ -45,9 +45,18 @@ window.onscroll = function () {
 };
 
 const rectangle = document.querySelector(".rectangle");
+const feature = document.querySelector(".feature");
+const gallery = document.querySelector("#gallery")
 window.addEventListener("scroll", function() {
-    if (window.scrollY > 640) {
+    if (window.scrollY > 640 && window.scrollY < 1200) {
         rectangle.classList.add("fade-in");
+        feature.classList.add("fade-in-once");
+      } else if(window.scrollY > 2400){
+        gallery.classList.add("fade-in-once");
+      } else {
+        feature.classList.remove("fade-in-once");
+        gallery.classList.remove("fade-in-once");
       }
+      
 });
 
