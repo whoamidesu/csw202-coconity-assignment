@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.navbar-fixed {
+    @apply fixed z-[9999] bg-white bg-opacity-70 shadow-sm shadow-gray-400;
+    backdrop-filter: blur(5px);
+}
+
+.black {
+    @apply text-black !important;
+}
+
+.invert {
+    filter: invert(100%);
+}
+
+.scrolled-hover:hover {
+    @apply shadow-bt-shadow shadow-blue-700 text-blue-700 !important;
+    
+}
+.hamburger-line {
+    @apply w-[30px] h-[2px] my-2 block bg-white;
+}
+
+.hamburger-active > span:nth-child(1) {
+    @apply rotate-45;
+}
+
+.hamburger-active > span:nth-child(2) {
+    @apply scale-0;
+}
+
+.hamburger-active > span:nth-child(3) {
+    @apply  -rotate-45;
+}
+
+.btn {
+    @apply rounded-md shadow-md py-3 px-6 transition duration-300
+}
+
+.btn-purple {
+    @apply bg-seal-brown text-white
+}
+
+.btn-white {
+    @apply bg-white text-black
+}
+
+* {
+    @apply scroll-smooth;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        @apply -left-64;
+    }
+    50% {
+        opacity: 1;
+        @apply -left-36
+        }
+    100% {
+        opacity: 1;
+        @apply -left-64;
+    }
+}
+
+@keyframes fade-in-once {
+    0% {
+        opacity: 0;
+        @apply -left-64;
+    }
+    100% {
+        opacity: 1;
+        @apply -left-0
+    }
+}
+
+.fade-in {
+    animation: fade-in 2.5s;
+    animation-iteration-count: infinite;
+}
+
+.fade-in-once {
+    animation: fade-in-once 1s;
+    animation-iteration-count: 1;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .swiper {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .swiper{
+    @apply w-full;
+    @apply h-full;
+    @apply mx-auto;
+}
+
+.swiper-slide {
+    @apply text-base bg-stone-500 items-center;
+}
+
+.swiper-slide img {
+    @apply block w-full h-full object-cover;
+}
+
+.swiper-button-next:after {
+    @apply hidden
+}
+.swiper-button-prev:after {
+    @apply hidden
+}
+
+.swiper-pagination .swiper-pagination-clickable .swiper-pagination-bullets .swiper-pagination-horizontal {
+    @apply top-10 !important;
+}
+.swiper-pagination-bullet-active {
+    background-color: #fff !important;
+    top: 10px !important;
+}
+
+.swiper-pagination-bullet-active{
+    @apply bg-stone-500;
+}
