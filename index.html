@@ -31,24 +31,25 @@
                     lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
                         <ul class="block lg:flex">
                             <li class="group">
-                                <a href="#top" class="text-sm text-dark-grey uppercase py-2 mx-8 flex transition duration-300 ease-in-out lg:text-white group-hover:text-blue-300"  id="list">Home</a>
+                                <a href="#top" class="list text-sm text-dark-grey uppercase py-2 mx-8 flex transition duration-300 ease-in-out lg:text-white group-hover:text-blue-300">Home</a>
                             </li>
                             <li class="group">
-                                <a href="#about" class="text-sm text-dark-grey uppercase py-2 mx-8 flex transition duration-300 ease-in-out lg:text-white group-hover:text-blue-300"  id="list">About</a>
+                                <a href="#about" class="list text-sm text-dark-grey uppercase py-2 mx-8 flex transition duration-300 ease-in-out lg:text-white group-hover:text-blue-300">About</a>
                             </li>
                             <li class="group">
-                                <a href="#product" class="text-sm text-dark-grey uppercase py-2 mx-8 flex transition duration-300 ease-in-out lg:text-white group-hover:text-blue-300"  id="list">Products</a>
+                                <a href="#product" class="list text-sm text-dark-grey uppercase py-2 mx-8 flex transition duration-300 ease-in-out lg:text-white group-hover:text-blue-300">Products</a>
                             </li>
                             <li class="group">
-                                <a href="#feature" class="text-sm text-dark-grey uppercase py-2 mx-8 flex transition duration-300 ease-in-out lg:text-white group-hover:text-blue-300"  id="list">Features</a>
+                                <a href="#feature" class="list text-sm text-dark-grey uppercase py-2 mx-8 flex transition duration-300 ease-in-out lg:text-white group-hover:text-blue-300">Features</a>
                             </li>
                             <li class="group">
-                                <a href="#contact" class="text-sm text-dark-grey uppercase py-2 mx-8 flex transition duration-300 ease-in-out lg:text-white group-hover:text-blue-300"  id="list">Contact</a>
+                                <a href="#contact" class="list text-sm text-dark-grey uppercase py-2 mx-8 flex transition duration-300 ease-in-out lg:text-white group-hover:text-blue-300">Contact</a>
                             </li>
                         </ul>
                     </nav>
                 </div>
         </div>
+    </div>
 
     </header>
 
@@ -79,18 +80,19 @@
             Getting your coco product is one click away from your device
           </p>
           <div class="flex justify-center flex-wrap gap-6">
-            <button
+            <a href="#about">
+              <button
               type="button"
               class="btn btn-purple hover:bg-white hover:text-black"
             >
-              <a href="#about">Discover More</a>
-            </button>
+              Discover More
+            </button></a>
+            <a href="#gallery">
             <button
               type="button"
-              class="btn btn-white hover:bg-seal-brown hover:text-white"
-            >
-              <a href="#gallery">Our Gallery</a>
-            </button>
+              class="btn btn-white hover:bg-seal-brown hover:text-white">Our Gallery</button>
+            </a>
+            
           </div>
         </div>
         <!-- Image -->
@@ -164,16 +166,15 @@
         </div>
         <!-- Rounded Rectangle -->
         <div
-          class="rectangle hidden lg:block overflow-hidden bg-stone-500 rounded-r-full absolute h-60 w-2/4 -bottom-24 -left-36"
-        />
-      </div>
+          class="rectangle hidden lg:block overflow-hidden bg-stone-500 rounded-r-full absolute h-60 w-2/4 -bottom-24 -left-36">
+        </div>
     </section>
 
     <!-- Products -->
-    <section class="relative bg-stone-500 py-20 mt-20 "id="product">
+    <section class="relative bg-stone-500 py-20 mt-20" id="product">
         <!-- Heading -->
         <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
-        <h1 class="text-3xl text-center font-bold text-white lg:mt-20"">Our Products</h1>
+        <h1 class="text-3xl text-center font-bold text-white lg:mt-20">Our Products</h1>
         <p class="text-center italic text-slate-200 mt-4">
             Updated per May 8th 2022
         </p>
@@ -235,11 +236,11 @@
                             tempore quia vel ad. Ullam.
                             </p>
                             <div class="flex justify-center flex-wrap mt-4 mb-4 sm:mb-5">
-                                <button
+                              <a href="#about"><button
                                     type="button"
                                     class="btn btn-purple hover:bg-white hover:text-black"
-                                    ><a href="#about">See Details</a>
-                                </button>
+                                    >See Details
+                                </button></a>
                             </div>
                         </div>
                     </div>                
@@ -267,11 +268,12 @@
                             tempore quia vel ad. Ullam.
                             </p>
                             <div class="flex justify-center flex-wrap mt-4 mb-4 sm:mb-5">
+                              <a href="#about">
                                 <button
                                     type="button"
                                     class="btn btn-purple hover:bg-white hover:text-black"
-                                    ><a href="#about">See Details</a>
-                                </button>
+                                    >See Details
+                                </button></a>
                             </div>
                         </div>
                     </div>                
@@ -299,11 +301,11 @@
                             tempore quia vel ad. Ullam.
                             </p>
                             <div class="flex justify-center flex-wrap mt-4 mb-4 sm:mb-5">
-                                <button
+                              <a href="#about"><button
                                     type="button"
                                     class="btn btn-purple hover:bg-white hover:text-black"
-                                    ><a href="#about">See Details</a>
-                                </button>
+                                    >See Details
+                                </button></a>
                             </div>
                         </div>
                     </div>                
@@ -331,11 +333,13 @@
                             tempore quia vel ad. Ullam.
                             </p>
                             <div class="flex justify-center flex-wrap mt-4 mb-4 sm:mb-5">
-                                <button
+                              <a href="#about">
+                                 <button
                                     type="button"
                                     class="btn btn-purple hover:bg-white hover:text-black"
-                                    ><a href="#about">See Details</a>
+                                    >See Details
                                 </button>
+                              </a>
                             </div>
                         </div>
                     </div>                
@@ -444,25 +448,25 @@
             class="flex flex-col items-start m-4 text-left w-40 box-border text-white mx-auto"
           >
             <h2 class="mb-4 text-white font-semibold text-2xl">About Us</h2>
-            <a href="#" class="hover:text-blue-300 transition-all">Our Catalog</a>
-            <a href="#" class="hover:text-blue-300 transition-all">Mail Us</a>
+            <a href="#about" class="hover:text-blue-300 transition-all">Our Catalog</a>
+            <a href="#about" class="hover:text-blue-300 transition-all">Mail Us</a>
           </div>
           <div
             class="flex flex-col items-start m-4 text-left w-40 box-border text-white mx-auto"
           >
             <h2 class="mb-4 text-white font-semibold text-2xl">Social Media</h2>
             <a
-              href="#"
+              href="#about"
               class="hover:text-blue-300 transition-all"
               target="__blank">Facebook</a
             >
             <a
-              href="#"
+              href="#about"
               class="hover:text-blue-300 transition-all"
               target="__blank">LinkedIn</a
             >
             <a
-              href="#"
+              href="#about"
               class="hover:text-blue-300 transition-all"
               target="__blank">Instagram</a
             >

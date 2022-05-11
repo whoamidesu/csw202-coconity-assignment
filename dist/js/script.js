@@ -21,7 +21,7 @@ hamburger.addEventListener("click", function () {
 window.onscroll = function () {
   const header = document.querySelector("header");
   const fixedNav = header.offsetTop;
-  const list = document.querySelectorAll("#list");
+  const list = document.querySelectorAll(".list");
   const logo = document.querySelector("#logo");
 
   if (window.pageYOffset > fixedNav) {
