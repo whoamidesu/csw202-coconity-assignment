@@ -19,8 +19,8 @@
 
 .scrolled-hover:hover {
     @apply shadow-bt-shadow shadow-blue-700 text-blue-700 !important;
-    
 }
+
 .hamburger-line {
     @apply w-[30px] h-[2px] my-2 block bg-white;
 }
@@ -37,6 +37,34 @@
     @apply  -rotate-45;
 }
 
+#bg-image {
+    background-image: url(https://images.unsplash.com/photo-1537191072641-5e19cc173c6a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80); 
+    background-size: cover;
+}
+
+#gallery1{
+    background: #fff; background-image: url(../dist/img/showcase1.png); background-size: cover; background-position: center;
+}
+
+#gallery2 {
+    background: #fff; background-image: url(../dist/img/showcase6.png); background-size: cover; background-position: center;
+}
+
+#gallery3 {
+    background: #fff; background-image: url(../dist/img/showcase3.png); background-size: cover; background-position: center;
+}
+
+#gallery4 {
+    background: #fff; background-image: url(../dist/img/showcase5.png); background-size: cover; background-position: center;
+}
+
+#gallery5 {
+    background: #fff; background-image: url(../dist/img/showcase8.png); background-size: cover; background-position: center;
+}
+
+#gallery6 {
+    background: #fff; background-image: url(../dist/img/showcase2.png); background-size: cover; background-position: center;
+}
 .btn {
     @apply rounded-md shadow-md py-3 px-6 transition duration-300
 }
